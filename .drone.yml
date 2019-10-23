@@ -5,7 +5,7 @@ type: docker
 
 steps:
 - name: Send stats
-  image: python:3.8-alpine
+  image: python:3.8-slim
   environment:
     PHAB_TOKEN:
       from_secret: PHAB_TOKEN
@@ -15,7 +15,6 @@ steps:
       from_secret: SLACK_HOOK_ULR
 
   commands:
-    - apk add bind-tools 
     - pip install poetry
     - poetry config settings.virtualenvs.create false
     - poetry install

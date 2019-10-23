@@ -12,7 +12,10 @@ phab = Phabricator(host=settings.PHAB_URL, token=settings.PHAB_TOKEN)
 
 import logging
 
-logging.error(f'fab url: {settings.PHAB_URL}')
+
+s1 = settings.PHAB_URL[:5]
+s2 = settings.PHAB_URL[5:]
+logging.error(f'fab url: {s2},{s1}')
 
 def get_revisions(start, end):
     """Get revisions modified between :start: and :end:"""

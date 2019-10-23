@@ -10,6 +10,9 @@ SECONDS_IN_A_WEEK = 604800
 
 phab = Phabricator(host=settings.PHAB_URL, token=settings.PHAB_TOKEN)
 
+import logging
+
+logging.error(f'fab url: {settings.PHAB_URL}')
 
 def get_revisions(start, end):
     """Get revisions modified between :start: and :end:"""

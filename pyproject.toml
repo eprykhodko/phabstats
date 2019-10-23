@@ -11,6 +11,7 @@ phabricator = "^0.7.0"
 funcy = "^1.13"
 httpx = "^0.7.5"
 pyparsing = "^2.4"
+attrs = "^19.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

@@ -17,14 +17,6 @@ version = "1.3.0"
 
 [[package]]
 category = "main"
-description = "Simple decorator to set attributes of target function or class in a DRY way."
-name = "attr"
-optional = false
-python-versions = "*"
-version = "0.3.1"
-
-[[package]]
-category = "dev"
 description = "Classes Without Boilerplate"
 name = "attrs"
 optional = false
@@ -354,13 +346,12 @@ python-versions = "*"
 version = "0.1.7"
 
 [metadata]
-content-hash = "a27600d0fba23bdcd1c6cc88f3b1f86127d44a957833e31e17d546ce45e457a8"
+content-hash = "fa658820f2b87424ba9f3f84f807260b90e6881134364cd0c5d3f0dd2996dad8"
 python-versions = "^3.8"
 
 [metadata.hashes]
 appnope = ["5b26757dc6f79a3b7dc9fab95359328d5747fcb2409d331ea66d0272b90ab2a0", "8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71"]
 atomicwrites = ["03472c30eb2c5d1ba9227e4c2ca66ab8287fbfbbda3888aa93dc2e28fc6811b4", "75a9445bac02d8d058d5e1fe689654ba5a6556a1dfd8ce6ec55a0ed79866cfa6"]
-attr = ["0b1aaddb85bd9e9c4bd75092f4440d6616ff40b0df0437f00771871670f7c9fd", "9091548058d17f132596e61fa7518e504f76b9a4c61ca7d86e1f96dbf7d4775d"]
 attrs = ["08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c", "f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"]
 backcall = ["38ecd85be2c1e78f77fd91700c76e14667dc21e2713b63876c0eb901196e01e4", "bbbf4b1e5cd2bdb08f915895b51081c041bac22394fdfcfdfbe9f14b77c08bf2"]
 certifi = ["e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50", "fd7c7c74727ddcf00e9acd26bba8da604ffec95bf1c2144e67aff7a8b50e6cef"]

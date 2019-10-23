@@ -1,0 +1,18 @@
+name: default
+
+kind: pipeline
+type: docker
+
+steps:
+- name: install deps and run tests
+  image: python:3.8-alpine
+
+  commands:
+    - pip install poetry
+    - poetry config settings.virtualenvs.create false
+    - poetry install
+    - poerty run send-stats
+
+trigger:
+  event:
+    - push

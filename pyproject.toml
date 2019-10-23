@@ -10,14 +10,15 @@ python = "^3.8"
 phabricator = "^0.7.0"
 funcy = "^1.13"
 httpx = "^0.7.5"
+pyparsing = "^2.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 ipython = "^7.8"
 
+[tool.poetry.scripts]
+send-stats = "phabstats:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
-[tool.poetry.scripts]
-send-stats = "phabstats:main"

@@ -1,4 +1,4 @@
 *.pyc
 .idea
-
+phabstats.egg-info/
 phabstats/settings/dev.py

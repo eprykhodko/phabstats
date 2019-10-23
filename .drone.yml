@@ -6,6 +6,13 @@ type: docker
 steps:
 - name: Send stats
   image: python:3.8-alpine
+  environment:
+    PHAB_TOKEN:
+      from_secret: PHAB_TOKEN
+    PHAB_URL:
+      from_secret: PHAB_URL
+    SLACK_HOOK_ULR:
+      from_secret: SLACK_HOOK_ULR
 
   commands:
     - pip install poetry

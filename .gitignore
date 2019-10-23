@@ -1,0 +1,4 @@
+*.pyc
+.idea
+
+phabstats/settings/dev.py

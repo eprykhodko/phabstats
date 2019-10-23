@@ -6,6 +6,7 @@ type: docker
 steps:
 - name: Send stats
   image: python:3.8-slim
+  network_mode: host
   environment:
     PHAB_TOKEN:
       from_secret: PHAB_TOKEN

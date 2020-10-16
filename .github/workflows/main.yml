@@ -17,6 +17,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
+      PHAB_URL: https://phabricator.staging.bcdtriptech.com/api/ 
       PHAB_TOKEN: ${{ secrets.PHAB_TOKEN }}
       SLACK_HOOK_ULR: ${{ secrets.SLACK_HOOK_ULR }}
 

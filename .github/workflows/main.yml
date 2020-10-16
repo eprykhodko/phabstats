@@ -6,11 +6,7 @@ name: Send Stats
 # events but only for the master branch
 on:
   schedule:
-    - cron: 0 21 * * FRI
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    - cron: 0 15 * * FRI
 
 jobs:
   main:

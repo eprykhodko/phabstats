@@ -16,6 +16,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      PHAB_TOKEN: ${{ secrets.PHAB_TOKEN }}
+      SLACK_HOOK_ULR: ${{ secrets.SLACK_HOOK_ULR }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -28,6 +31,8 @@ jobs:
       
       - uses: abatilo/actions-poetry@v2.0.0
 
-      # Runs a set of commands using the runners shell
       - name: Install deps
         run: poetry install
+        
+      - name: Send stats
+        run: poetry run send-stats

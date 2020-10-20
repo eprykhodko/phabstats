@@ -1,0 +1,31 @@
+name: Send Stats
+
+# Controls when the action will run. 
+on:
+  schedule:
+    - cron: 0 15 * * FRI
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    env:
+      PHAB_URL: https://phabricator.staging.bcdtriptech.com/api/ 
+      PHAB_TOKEN: ${{ secrets.PHAB_TOKEN }}
+      SLACK_HOOK_ULR: ${{ secrets.SLACK_HOOK_ULR }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      
+      - uses: abatilo/actions-poetry@v2.0.0
+
+      - name: Install deps
+        run: poetry install
+        
+      - name: Send stats
+        run: poetry run send-stats

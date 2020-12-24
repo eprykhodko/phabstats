@@ -11,8 +11,8 @@ steps:
       from_secret: PHAB_TOKEN
     PHAB_URL:
       from_secret: PHAB_URL
-    SLACK_HOOK_ULR:
-      from_secret: SLACK_HOOK_ULR
+    SLACK_HOOK_URL:
+      from_secret: SLACK_HOOK_URL
 
   commands:
     - pip install poetry

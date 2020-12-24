@@ -11,7 +11,7 @@ jobs:
     env:
       PHAB_URL: https://phabricator.staging.bcdtriptech.com/api/ 
       PHAB_TOKEN: ${{ secrets.PHAB_TOKEN }}
-      SLACK_HOOK_ULR: ${{ secrets.SLACK_HOOK_ULR }}
+      SLACK_HOOK_URL: ${{ secrets.SLACK_HOOK_URL }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
